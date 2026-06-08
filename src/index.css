@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sigo-primary: #0052D9;
+  --color-sigo-blue: #1677FF;
+  --color-sigo-light: #E8F3FF;
+  --color-sigo-success: #00B42A;
+  --color-sigo-warning: #FF7D00;
+  --color-sigo-danger: #F53F3F;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background-color: #f5f7fa;
+  color: #1d2129;
+}

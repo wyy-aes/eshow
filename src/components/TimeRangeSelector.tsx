@@ -13,12 +13,12 @@ const options: { value: TimeRange; label: string }[] = [
 
 export default function TimeRangeSelector({ value, onChange }: Props) {
   return (
-    <div className="flex gap-1 bg-gray-100 rounded-lg p-1">
+    <div className="flex gap-0.5 bg-gray-100 rounded-lg p-0.5 md:p-1">
       {options.map((opt) => (
         <button
           key={opt.value}
           onClick={() => onChange(opt.value)}
-          className={`px-3 py-1.5 text-sm rounded-md transition-colors ${
+          className={`px-2 md:px-3 py-1 md:py-1.5 text-xs md:text-sm rounded-md transition-colors ${
             value === opt.value
               ? 'bg-white text-sigo-primary font-medium shadow-sm'
               : 'text-gray-500 hover:text-gray-700'

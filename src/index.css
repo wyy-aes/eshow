@@ -15,4 +15,9 @@ body {
     "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   background-color: #f5f7fa;
   color: #1d2129;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
 }

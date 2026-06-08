@@ -15,7 +15,7 @@ interface Props {
 
 export default function ValueBanner({ items }: Props) {
   return (
-    <div className="grid grid-cols-5 gap-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 md:gap-4">
       {items.map((item) => (
         <div
           key={item.title}
@@ -25,7 +25,7 @@ export default function ValueBanner({ items }: Props) {
             {iconMap[item.icon]}
             <span className="text-sm font-medium">{item.title}</span>
           </div>
-          <p className="text-lg font-bold">{item.target}</p>
+          <p className="text-base md:text-lg font-bold">{item.target}</p>
         </div>
       ))}
     </div>
